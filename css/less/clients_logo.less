@@ -1,0 +1,61 @@
+//main:../style.less;
+@import "../../css/less/var.less";
+.clients{
+	background-color:#f8f8f8;
+	height: 369px;
+	position: relative;
+
+}
+.clients_logo{
+	display:flex;
+	margin: 0 auto;
+	padding: 50px 0 0 90px;
+@media @tablet{
+	padding:50px 15px 0 15px;
+}
+@media @mobile{
+
+	flex-wrap: wrap;
+	width:100%;
+	padding: 0px 0 0 300px;
+}
+@media @mobile-sm{
+	padding: 0 0 0 120px;
+}
+}
+.clients_img{
+	width: 25%;
+@media @tablet{
+	padding:0 5px;
+}
+@media @mobile{
+
+	flex-wrap: wrap;
+	width:100%;
+	padding-top: 14px;
+}
+
+}
+.clients_content {
+	text-align: center;
+	padding-top:100px;
+	font-family: 'Roboto Slab', serif;
+	color: #555555;
+@media @mobile{
+ padding-top:10px;	
+}
+}
+.clients_text {
+	font-style: italic;
+	font-size: 18px;
+	font-weight: normal;
+@media @mobile-sm{
+	font-size:12px;
+}
+}
+.clients_name {
+	font-size: 20px;
+@media @mobile-sm{
+	font-size:17px;
+}
+}

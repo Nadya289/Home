@@ -1,0 +1,50 @@
+//main:../style.less;
+
+@import "../../css/less/var.less";
+.intro {
+	padding-top:100px;
+	height:635px;
+	background-color: #611b17;
+	background:url(../img/bg.jpg)center no-repeat;
+	overflow:hidden;
+
+	background-size: cover;
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+	
+}
+.container {}
+.intro_inner {
+	text-align: center;
+	color: #fff;
+	max-width: 581px;
+  	height: 87px;
+  	margin:0 auto;
+
+  	// position:absolute;
+  	// top:170px;
+  	// left:420px;
+}
+.intro_title {
+	font-family: 'Roboto Slab', serif;
+	font-size:48px;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding-bottom: 20px;
+@media @mobile-sm {
+font-size: 30px;	
+}
+
+}
+.intro_subtitle {
+	 font-family: Montserrat;
+  font-size: 20px;
+	color:#fff;
+	line-height: 1.2;
+	letter-spacing: normal;
+	font-weight: normal;
+	padding-bottom:40px;
+}

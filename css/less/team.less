@@ -1,0 +1,115 @@
+//main:../style.less;
+@import "../../css/less/var.less";
+
+.team {
+	display: flex;
+
+}
+.team_item {
+	width: 25%;
+	position:relative;
+	overflow:hidden;
+}
+.team_item:hover .team_content{
+	opacity:1;
+}
+.team_photo{
+	padding-bottom:15px;
+	@media @tablet {
+	width:180px;
+	overflow:hidden;
+	
+	transform: translateY(-30%);
+	transform:translateX(-10%);
+}
+@media @mobile-sm{
+	width:100px;
+
+	overflow:hidden;
+}
+}
+
+.team_content {
+	display: flex;
+	justify-content: center;
+
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 263px;
+	height: 250px;
+
+	background-color: rgba(149,149,149, 0.5);
+	opacity: 0;
+
+	transition: opacity .2s linear;
+@media @tablet{
+	width: 165px;
+	height:171px;
+	overflow:hidden;
+}
+@media @mobile-sm{
+	width:150px;
+	height:145px;
+}
+@media @mobile-sm{
+	height:95px;
+	width:100px;
+}
+
+}
+.team_content i{
+	padding: 190px 7px ;
+
+	text-align: center;
+	color:white;
+@media @tablet{
+	padding:100px 5px;
+}
+@media @mobile-sm{
+	padding:70px 3px 0 3px;
+
+}
+
+}
+
+.team_content i:hover{
+	color:#c0301c;
+}
+.team_name {
+	text-align: center;
+	font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.71;
+ text-transform: uppercase;
+  color: #555555;
+@media @notebook{
+	font-size: 12px;
+	text-align: left;
+}
+@media @mobile-sm{
+	font-size: 7px;
+}
+}
+.team_prof {
+	text-align: center;
+	 font-size: 13px;
+	font-weight: normal;
+	font-family: 'Roboto Slab', serif;
+  line-height: 1.85;
+  color: #555555;
+  padding-bottom:40px;
+@media @notebook{
+	font-size: 10px;
+	text-align: left;
+}
+@media @mobile-sm{
+	font-size: 7px;
+}
+}
+.team_content_soc{
+	color:#fff;
+	padding:0 10px 70px;
+}

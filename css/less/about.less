@@ -1,0 +1,51 @@
+@import "../../css/less/var.less";
+.section_grey {
+	background-color:#f8f8f8;
+}
+.about_text {
+	display: flex;
+justify-content: space-between;
+	
+	margin-bottom:100px;
+	@media @mobile{
+		display:flex;
+		flex-wrap: wrap;
+	}
+		@media @mobile-sm{
+		margin-bottom:10px;
+		text-align: center;
+	}
+}
+.about_inner_text {
+
+
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #555555;
+	text-align: left;
+
+	padding: 70px 30px 15px 0;
+
+	width: 500px;
+	// height: 110px;
+
+	@media @tablet{
+		width:350px;
+		margin-bottom:40px;
+		padding: 30px 30px 15px 0;
+	}
+@media @mobile{
+	font-size: 12px;
+}
+@media @mobile-sm{
+	font-size: 10px;
+	max-width: 100%;
+	padding: 0px 30px 15px 0;
+}}
+.about_inner{
+@media @mobile-sm{
+	margin: 0 auto;
+	max-width: 200px;
+}
+}
